@@ -75,7 +75,7 @@ printf("%c %c %c\n", a, b, c);  // output :
                                 //          A B
 ```
 ###### Problem 
-- character variable A read '\n' instead of 'A' 
+- character variable A read '\n' instead of 'A'  
 ###### Solution 1. Ignore '\n' with white space before reading **character**
 ```cpp
 int n;
