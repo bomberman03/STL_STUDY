@@ -1,7 +1,8 @@
 # STL_STUDY
 ---
 ##### Part 1. C Language 
-- In this section we are going to study how to use **scanf** and **printf** 
+- In this section we are going to study how to use **scanf** and **printf**   
+
 ###### scanf / printf
 - C language function for standard input and output
 - Defined in <stdio.h> header file
