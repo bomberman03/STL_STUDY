@@ -44,8 +44,22 @@ printf("%s\n", c); // output : h
 - %Lf : long double
 
 ###### Return value of scanf
-- return value of scanf is number of parameter succefull
-- If needed to get input to end of file
+- On success, the function returns the number of items of the argument list successfully filled.  
 ```cpp
-while ( scanf("%d %d",&a, &b) == 2 )
+while ( scanf("%d %d",&a, &b) == 2 ) // read file to the end
+```
+###### Ignore white space and line break
+- scanf ignores white space and line break
+```cpp
+for ( int i = 0; i<5; i++) {
+    scanf("%d", &n); // input : 10 20 30 40 50
+    printf("%d\n",n); // output : 10 20 30 40 50 
+}
+for ( int i = 0; i<5; i++) {
+    scanf("%d", &n);// input : 10 
+                    //          20      30 
+                    //          40 
+                    //              50
+    printf("%d\n",n); // output : 10 20 30 40 50 
+}
 ```
