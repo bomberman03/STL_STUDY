@@ -63,3 +63,34 @@ for ( int i = 0; i<5; i++) {
     printf("%d\n",n); // output : 10 20 30 40 50 
 }
 ```
+###### Case Study. 
+- Reading **char** right after reading **int**
+```cpp
+int n;
+char a,b,c;
+scanf("%d", &n); // input : 10
+scanf("%c %c %c", &a, &b, &c); // input : A B C
+printf("%d\n", n); // output : 10
+printf("%c %c %c\n", a, b, c);  // output :  
+                                //          A B
+```
+###### Problem 
+- character variable A read '\n' instead of 'A' 
+###### Solution 1. Ignore '\n' with white space before reading **character**
+```cpp
+int n;
+char a,b,c;
+scanf("%d", &n); // input : 10
+scanf(" %c %c %c", &a, &b, &c); // input : A B C
+printf("%d\n", n); // output : 10
+printf("%c %c %c\n", a, b, c);  // output : A B C
+```
+###### Solution 2. Explicitly read '\n' after reading **int**
+```cpp
+int n;
+char a,b,c;
+scanf("%d\n", &n); // input : 10
+scanf("%c %c %c", &a, &b, &c); // input : A B C
+printf("%d\n", n); // output : 10
+printf("%c %c %c\n", a, b, c);  // output : A B C
+```
