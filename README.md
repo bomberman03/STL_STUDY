@@ -14,7 +14,7 @@
     scanf("%d",&n); // input : 5
     printf("%d\n",n); // output : 5
     ```
-- %i : decimal
+- %i : decimal  
     ```
     int n, m;
     scanf("%d %i",&n, &m); // input : 10 10 
@@ -26,13 +26,13 @@
     ```
 - %x : hexadecimal 
 - %o : octal
-- %s : string
+- %s : string  
     ```
     char s[100];
     scanf("%s", s); // input : hello world! 
     printf("%s\n", s); // output : hello
     ```
-- %c : character
+- %c : character  
     ```
     char c;
     scanf("%c", &c); // input : hello world! 
@@ -41,8 +41,3 @@
 - %f : float
 - %lf : double
 - %Lf : long double
-
-
-
-
-
