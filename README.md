@@ -42,3 +42,10 @@ printf("%s\n", c); // output : h
 - %f : float
 - %lf : double
 - %Lf : long double
+
+###### Return value of scanf
+- return value of scanf is number of parameter succefull
+- If needed to get input to end of file
+```cpp
+while ( scanf("%d %d",&a, &b) == 2 )
+```
